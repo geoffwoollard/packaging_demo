@@ -6,7 +6,6 @@ class TestRotations:
     def test_zero(self):
         R = build_2d_rotation_matrix(0)
         assert np.allclose(R, np.eye(2))
-        print('you passed the test!')
 
     def test_pi_over_two(self):
         R = build_2d_rotation_matrix(np.pi / 2)
@@ -17,3 +16,8 @@ class TestRotations:
         R = build_2d_rotation_matrix(np.pi / 4)
         true = np.array([[np.sqrt(0.5), -np.sqrt(0.5)], [np.sqrt(0.5), np.sqrt(0.5)]])
         assert np.allclose(R, true)
+
+def test_pass():
+    assert True
+def test_fail():
+    assert False
