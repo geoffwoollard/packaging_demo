@@ -16,3 +16,9 @@ class TestRotations:
         R = build_2d_rotation_matrix(np.pi / 4)
         true = np.array([[np.sqrt(0.5), -np.sqrt(0.5)], [np.sqrt(0.5), np.sqrt(0.5)]])
         assert np.allclose(R, true)
+
+def test_pass():
+    assert True
+    
+def test_fail():
+    assert False
